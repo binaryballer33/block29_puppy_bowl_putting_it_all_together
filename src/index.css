@@ -1,0 +1,80 @@
+/* Apply a background image to the entire body of the document. */
+body {
+  background-image: url("./concrete.jpg"); /* The image used as a background. */
+  background-repeat: no-repeat; /* The background image will not repeat. */
+  background-attachment: fixed; /* The background image will not scroll with the page. */
+  background-size: cover; /* The background image will cover the entire area of the element. */
+}
+
+/* Styling for the introduction text of the application. */
+.intro {
+  text-align: center; /* The text is centered. */
+  color: #610564; /* The color of the text. */
+  font-size: 24px; /* The size of the text. */
+  padding: 24px; /* The padding around the text. */
+  margin-left: 21px; /* The margin to the left of the text. */
+  padding-right: 100px; /* The padding to the right of the text. */
+  padding-left: 100px; /* The padding to the left of the text. */
+}
+
+/* Styling for the container that holds the player cards. */
+.players {
+  /* The player cards are displayed using flexbox. */
+  display: flex;
+  /* The player cards will wrap onto the next line if there is not enough space. */
+  text-wrap: wrap;
+  flex-direction: column;
+  /* The player cards are centered on the line. */
+  justify-content: center;
+}
+
+/* Styling for individual player cards. */
+.player-card {
+  width: 360px; /* The width of the card. */
+  height: 380px; /* The height of the card. */
+  margin: 10px; /* The margin around the card. */
+  /* The background color of the card. */
+  /* The border around the card. */
+  /* The radius of the card's corners. */
+  /* The shadow effect around the card. */
+  overflow: hidden; /* Any content that goes outside the card will be hidden. */
+  position: relative; /* The card's position is set to relative so it can be moved using the transform property. */
+  transition: transform 0.3s; /* Transition effect for the transform property. */
+}
+
+/* Styling for when a user hovers over a player card. */
+.player-card:hover {
+  /* The card moves up 5 pixels when hovered over. */
+  /* might have to change this to margin-bottom */
+  margin-top: 5px; 
+}
+
+/* Styling for the container that holds the player's image. */
+.player-image-container {
+ /* The image is centered. */
+  background-size: cover;
+ /* The image is centered along the horizontal axis. */
+ /* The image is centered along the vertical axis. */
+  background-position: center;
+  height: 300px; /* The height of the image container. */
+  padding: 10px; /* The padding around the image. */
+}
+
+/* Styling for the player's image. */
+.player-image {
+  width: 250px; /* The width of the image. */
+  height: 250px; /* The height of the image. */
+  /* The image will cover the entire area of its container without distorting its aspect ratio. */
+  /* The image is displayed using CSS Grid. */
+ /* The margin to the left of the image. */
+}
+
+/* Styling for the player's details (name, breed, status). */
+.player-details {
+  flex-direction: column; /* The details are arranged in a column. */
+  align-items: center; /* The details are centered along the vertical axis. */
+  justify-content: center; /* The details are centered along the horizontal axis. */
+  color: #000; /* The color of the details text. */
+  font-size: 16px; /* The size of the details text. */
+  text-align: center; /* The details text is centered. */
+}
